@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>HAMBAWA VIP SPECIAL — Premium Membership</title>
+
+<meta name="description" content="Join HAMBAWA VIP SPECIAL for Rs. 2,000 with lifetime membership access, daily updates and admin support.">
+<meta name="theme-color" content="#050b1f">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #050b1f;
+  --panel: rgba(14, 25, 55, 0.78);
+  --border: rgba(112, 153, 255, 0.19);
+  --blue: #4385ff;
+  --cyan: #42e8ff;
+  --text: #f4f7ff;
+  --muted: #9baacb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', 'Noto Sans Sinhala', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.wrap {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+/* BACKGROUND */
+
+.bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 50% 0%, #10285a 0%, transparent 55%),
+    #050b1f;
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  opacity: .15;
+  background-image:
+    linear-gradient(rgba(94, 143, 255, .13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 143, 255, .13) 1px, transparent 1px);
+  background-size: 45px 45px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+.orb {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: .17;
+}
+
+.o1 {
+  background: #1769ff;
+  top: 10%;
+  left: -150px;
+}
+
+.o2 {
+  background: #00d9ff;
+  top: 45%;
+  right: -160px;
+}
+
+.o3 {
+  background: #5b35ff;
+  bottom: -150px;
+  left: 35%;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(5, 11, 31, .88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(112, 153, 255, .12);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.logo {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: var(--cyan);
+  border: 1px solid rgba(66, 232, 255, .35);
+  border-radius: 12px;
+  background: rgba(66, 232, 255, .08);
+}
+
+.logo svg {
+  width: 23px;
+  height: 23px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.menu a {
+  color: var(--muted);
+  font-size: .79rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  transition: .25s;
+}
+
+.menu a:hover {
+  color: var(--cyan);
+}
+
+.burger {
+  display: none;
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+  display: block;
+  width: 19px;
+  height: 2px;
+  margin: auto;
+  position: relative;
+  background: currentColor;
+  border-radius: 2px;
+}
+
+.burger span::before,
+.burger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.burger span::before {
+  top: -6px;
+}
+
+.burger span::after {
+  top: 6px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 105px 0 95px;
+}
+
+.hero .wrap {
+  max-width: 850px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 15px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(66, 232, 255, .25);
+  border-radius: 50px;
+  color: var(--cyan);
+  background: rgba(66, 232, 255, .07);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+}
+
+.pill i {
+  width: 7px;
+  height: 7px;
+  background: var(--cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--cyan);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 5.2rem);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -.045em;
+}
+
+.glow-text {
+  color: var(--cyan);
+  text-shadow: 0 0 35px rgba(66, 232, 255, .23);
+}
+
+.sub {
+  margin-top: 23px;
+  color: #c4d0e9;
+  font-size: clamp(1rem, 2.5vw, 1.22rem);
+}
+
+.desc {
+  max-width: 700px;
+  margin: 25px auto 0;
+  color: var(--muted);
+  font-size: .94rem;
+}
+
+.desc p + p {
+  margin-top: 12px;
+}
+
+.si {
+  font-family: 'Noto Sans Sinhala', 'Outfit', sans-serif;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+/* BUTTONS */
+
+.btn {
+  min-height: 51px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 25px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  cursor: pointer;
+  transition: transform .25s, box-shadow .25s, background .25s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-primary {
+  color: #031023;
+  background: linear-gradient(110deg, #42e8ff, #65a1ff);
+  box-shadow: 0 8px 30px rgba(51, 144, 255, .18);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 12px 35px rgba(51, 144, 255, .35);
+}
+
+.btn-ghost {
+  color: var(--text);
+  background: rgba(255, 255, 255, .035);
+  border-color: var(--border);
+}
+
+.btn-ghost:hover {
+  background: rgba(66, 232, 255, .07);
+  border-color: rgba(66, 232, 255, .4);
+}
+
+/* SECTION */
+
+section {
+  padding: 80px 0;
+}
+
+.sec-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sec-head h2,
+.panel h2 {
+  font-size: clamp(1.7rem, 4vw, 2.45rem);
+  font-weight: 800;
+  letter-spacing: -.025em;
+}
+
+.sec-head p {
+  color: var(--muted);
+  margin-top: 10px;
+  font-size: .95rem;
+}
+
+/* GLASS */
+
+.glass {
+  background: linear-gradient(
+    145deg,
+    rgba(19, 35, 73, .82),
+    rgba(9, 17, 40, .87)
+  );
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: 0 20px 65px rgba(0, 0, 0, .16);
+  backdrop-filter: blur(16px);
+}
+
+/* FEATURES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.feature {
+  padding: 25px 21px;
+  transition: transform .25s, border-color .25s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  border-color: rgba(66, 232, 255, .4);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: var(--cyan);
+  background: rgba(66, 232, 255, .08);
+  border: 1px solid rgba(66, 232, 255, .15);
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.feature h3 {
+  font-size: .93rem;
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+.feature p {
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+/* PRICING */
+
+#pricing {
+  padding-top: 60px;
+}
+
+.price-card {
+  max-width: 500px;
+  padding: 37px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.price-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 13px;
+  color: var(--cyan);
+  background: rgba(66, 232, 255, .08);
+  border: 1px solid rgba(66, 232, 255, .2);
+  border-radius: 50px;
+  font-size: .69rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.badge svg {
+  width: 17px;
+  height: 17px;
+}
+
+.price-card h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.tier {
+  color: var(--cyan);
+  font-size: .79rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  margin-top: 9px;
+}
+
+.amount {
+  font-size: clamp(2.7rem, 7vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: -.04em;
+  line-height: 1.3;
+  margin-top: 15px;
+  background: linear-gradient(100deg, #ffffff, #66eaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.once {
+  color: var(--muted);
+  font-size: .88rem;
+  margin-top: 3px;
+}
+
+.checks {
+  list-style: none;
+  text-align: left;
+  margin: 29px 0;
+  display: grid;
+  gap: 13px;
+}
+
+.checks li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #dce6fa;
+  font-size: .9rem;
+}
+
+.checks svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--cyan);
+}
+
+.price-card .btn {
+  width: 100%;
+}
+
+.note {
+  color: #8e9fbe;
+  font-size: .77rem;
+  margin-top: 16px;
+}
+
+/* PANELS */
+
+.panel {
+  max-width: 850px;
+  margin: auto;
+  padding: 42px;
+  text-align: center;
+}
+
+.panel p {
+  max-width: 650px;
+  margin: 17px auto 0;
+  color: var(--muted);
+  font-size: .94rem;
+}
+
+.panel .btn {
+  margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 35px 0 22px;
+  border-top: 1px solid rgba(112, 153, 255, .12);
+  background: rgba(3, 8, 24, .45);
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.foot strong {
+  font-size: .95rem;
+  letter-spacing: .04em;
+}
+
+.tag {
+  color: var(--muted);
+  font-size: .8rem;
+  margin-top: 3px;
+}
+
+.foot nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  list-style: none;
+}
+
+.foot nav a {
+  color: var(--muted);
+  font-size: .83rem;
+  transition: color .2s;
+}
+
+.foot nav a:hover {
+  color: var(--cyan);
+}
+
+.copy {
+  text-align: center;
+  margin-top: 27px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(112, 153, 255, .08);
+  color: #7484a4;
+  font-size: .76rem;
+}
+
+/* ANIMATION */
+
+.reveal {
+  animation: reveal .75s ease both;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 95px 0 75px;
+  }
+}
+
+@media (max-width: 680px) {
+  .nav {
+    min-height: 68px;
+  }
+
+  .brand {
+    font-size: .8rem;
+    gap: 8px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    padding: 18px 5%;
+    background: rgba(5, 11, 31, .98);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 13px 5px;
+  }
+
+  .hero {
+    padding: 82px 0 60px;
+  }
+
+  .pill {
+    font-size: .65rem;
+  }
+
+  .desc {
+    font-size: .88rem;
+  }
+
+  section {
+    padding: 58px 0;
+  }
+
+  .features {
+    gap: 12px;
+  }
+
+  .feature {
+    padding: 19px 15px;
+  }
+
+  .feature h3 {
+    font-size: .82rem;
+  }
+
+  .feature p {
+    font-size: .8rem;
+  }
+
+  .price-card {
+    padding: 28px 21px;
+  }
+
+  .panel {
+    padding: 29px 20px;
+  }
+
+  .foot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .foot nav ul {
+    gap: 13px 19px;
+  }
+
+  .cta-row {
+    flex-direction: column;
+  }
+
+  .cta-row .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .brand {
+    font-size: .72rem;
+  }
+
+  .amount {
+    font-size: 2.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="grid"></div>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+  <div class="wrap nav">
+
+    <a href="#home" class="brand" aria-label="HAMBAWA VIP SPECIAL home">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 8l4 4 5-7 5 7 4-4-2 11H5L3 8z"/>
+        </svg>
+      </span>
+      <span>HAMBAWA VIP SPECIAL</span>
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+      <span></span>
+    </button>
+
+    <nav aria-label="Main navigation">
+      <ul class="menu" id="menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#pricing">MEMBERSHIP</a></li>
+        <li><a href="#main-group">MAIN GROUP</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="wrap">
+
+    <span class="pill">
+      <i></i>
+      PREMIUM MEMBERSHIP
+    </span>
+
+    <h1>
+      ENTER THE <span class="glow-text">VIP</span><br>
+      EXPERIENCE.
+    </h1>
+
+    <p class="sub">
+      Your membership. Your access. All in one place.
+    </p>
+
+    <div class="desc">
+      <p class="si" lang="si">
+        HAMBAWA VIP SPECIAL වෙත සාදරයෙන් පිළිගනිමු.
+        අපගේ Membership එකේ විස්තර පරීක්ෂා කර
+        ඔබගේ Lifetime Package එක ලබාගන්න.
+      </p>
+
+      <p>
+        Welcome to HAMBAWA VIP SPECIAL — a premium media
+        membership featuring lifetime access, daily updates,
+        and admin support.
+      </p>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#pricing">
+        BUY VIP — RS. 2,000
+      </a>
+
+      <a class="btn btn-ghost"
+         href="https://t.me/+AsXq0i5bLE05YzRl"
+         target="_blank"
+         rel="noopener noreferrer">
+        VIEW MAIN GROUP
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- MEMBERSHIP FEATURES -->
+
+<section id="about">
+  <div class="wrap">
+
+    <div class="sec-head reveal">
+      <h2>
+        MEMBERSHIP <span class="glow-text">FEATURES</span>
+      </h2>
+
+      <p>
+        Everything included with your HAMBAWA VIP SPECIAL membership.
+      </p>
+    </div>
+
+    <div class="features">
+
+      <article class="glass feature reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="3"/>
+            <path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/>
+          </svg>
+        </div>
+
+        <h3>5,000+ VIDEOS</h3>
+        <p>
+          Explore a large media collection included with membership.
+        </p>
+      </article>
+
+      <article class="glass feature reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12a9 9 0 1 1-3-6.7"/>
+            <path d="M21 4v5h-5"/>
+            <path d="M12 7.5V12l3 2"/>
+          </svg>
+        </div>
+
+        <h3>DAILY UPDATES</h3>
+        <p>
+          New updates are added regularly.
+        </p>
+      </article>
+
+      <article class="glass feature reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 12c-2-2.5-3.5-4-5.5-4a4 4 0 0 0 0 8c2 0 3.5-1.5 5.5-4z"/>
+            <path d="M12 12c2 2.5 3.5 4 5.5 4a4 4 0 0 0 0-8c-2 0-3.5 1.5-5.5 4z"/>
+          </svg>
+        </div>
+
+        <h3>LIFETIME ACCESS</h3>
+        <p>
+          One-time membership payment for lifetime access.
+        </p>
+      </article>
+
+      <article class="glass feature reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3l8 3v6c0 4.5-3.3 7.8-8 9-4.7-1.2-8-4.5-8-9V6z"/>
+            <path d="M8.5 12l2.5 2.5 4.5-5"/>
+          </svg>
+        </div>
+
+        <h3>BACKUP AVAILABLE</h3>
+        <p>
+          Backup support is available for members.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SINGLE VIP MEMBERSHIP -->
+
+<section id="pricing">
+  <div class="wrap">
+
+    <div class="sec-head reveal">
+      <h2>
+        VIP <span class="glow-text">MEMBERSHIP</span>
+      </h2>
+
+      <p>
+        One plan. One payment. Lifetime access.
+      </p>
+    </div>
+
+    <article class="glass price-card reveal">
+
+      <span class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 8l4 4 5-7 5 7 4-4-2 11H5L3 8z"/>
+        </svg>
+        VIP MEMBER
+      </span>
+
+      <h3>HAMBAWA VIP SPECIAL</h3>
+
+      <div class="tier">
+        LIFETIME ACCESS
+      </div>
+
+      <div class="amount">
+        Rs. 2,000
+      </div>
+
+      <p class="once">
+        One-time payment
+      </p>
+
+      <ul class="checks">
+
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12.5l3 3 5-6"/>
+          </svg>
+          Lifetime membership access
+        </li>
+
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12.5l3 3 5-6"/>
+          </svg>
+          5,000+ video collection
+        </li>
+
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12.5l3 3 5-6"/>
+          </svg>
+          Daily updates
+        </li>
+
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12.5l3 3 5-6"/>
+          </svg>
+          Backup available
+        </li>
+
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12.5l3 3 5-6"/>
+          </svg>
+          Admin support
+        </li>
+
+      </ul>
+
+      <a class="btn btn-primary"
+         href="https://t.me/HAMBAWAVIP"
+         target="_blank"
+         rel="noopener noreferrer">
+        BUY NOW — RS. 2,000
+      </a>
+
+      <p class="note">
+        Telegram opens for you to contact the admin.
+        Follow the admin's instructions to complete your purchase.
+      </p>
+
+    </article>
+
+  </div>
+</section>
+
+<!-- MAIN GROUP -->
+
+<section id="main-group">
+  <div class="wrap">
+
+    <div class="glass panel reveal">
+
+      <h2>
+        CHECK BEFORE YOU <span class="glow-text">BUY</span>
+      </h2>
+
+      <p class="si" lang="si">
+        මිලදී ගැනීමට පෙර අපගේ Main Group එකට සම්බන්ධ වී
+        Membership තොරතුරු පරීක්ෂා කරන්න.
+      </p>
+
+      <p>
+        Join our main group to review available membership
+        information before purchasing.
+      </p>
+
+      <a class="btn btn-primary"
+         href="https://t.me/+AsXq0i5bLE05YzRl"
+         target="_blank"
+         rel="noopener noreferrer">
+        OPEN MAIN GROUP
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT ADMIN -->
+
+<section id="contact">
+  <div class="wrap">
+
+    <div class="glass panel reveal">
+
+      <h2>
+        READY TO JOIN THE <span class="glow-text">VIP?</span>
+      </h2>
+
+      <p>
+        Have questions? Contact our admin on Telegram.
+      </p>
+
+      <a class="btn btn-primary"
+         href="https://t.me/HAMBAWAVIP"
+         target="_blank"
+         rel="noopener noreferrer">
+        CONTACT ADMIN
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="wrap">
+
+    <div class="foot">
+
+      <div>
+        <strong>HAMBAWA VIP SPECIAL</strong>
+        <div class="tag">Premium Membership</div>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pricing">Membership</a></li>
+          <li>
+            <a href="https://t.me/+AsXq0i5bLE05YzRl"
+               target="_blank"
+               rel="noopener noreferrer">
+              Main Group
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/HAMBAWAVIP"
+               target="_blank"
+               rel="noopener noreferrer">
+              Contact Admin
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <p class="copy">
+      © <span id="year">2026</span> HAMBAWA VIP SPECIAL. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("menu");
+  const year = document.getElementById("year");
+
+  // Automatically update copyright year.
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
+
+  // Mobile navigation.
+  if (burger && menu) {
+    burger.addEventListener("click", function () {
+      const isOpen = menu.classList.toggle("open");
+      burger.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    // Close menu after selecting a navigation link.
+    menu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        menu.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Close menu when Escape is pressed.
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        menu.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
