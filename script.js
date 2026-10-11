@@ -5,7 +5,7 @@
      SITE CONFIGURATION — the website owner edits these values directly.
      There is no admin panel, login or password. Save the file and re-upload.
      ===================================================================== */
-  var ADMIN_URL = "https://t.me/HAMBAWAVIP";
+  var ADMIN_URL = "https://t.me/HAMBAWAVIP2";
   var GROUP_URL = "https://t.me/+AsXq0i5bLE05YzRl";
   var VIP_MESSAGE = "Hi මට VIP එක BUY කරන්න ඕනි";
 
